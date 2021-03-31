@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.header-g-45987{
+	position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+	z-index:200;
+}
+
+body{
+	background: whitesmoke;
+}
+
+.header-g-next-45987{
+	position: relative;
+    display: -webkit-box;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+}
+
+.header-img-45987{
+	position: relative;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    cursor: pointer;
+    background: none;	
+}
+
+.header-img-next-45987{
+	width: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header-text-45987-t{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #929292;
+    font-weight: 600;
+	margin-right:20px;
+}
+
+.header-button-45987-t{
+	line-height: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #929292;
+    font-weight: 400;
+    margin-left: 10px;
+	cursor:pointer;
+    -webkit-transition: color 0.5s ease-in;
+    -moz-transition: color 0.5s ease-in;
+    -o-transition: color 0.5s ease-in;
+ -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.header-button-45987-t:hover{
+	color:#8186ce;
+}
+
+
+.header-channel-45987{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: none;
+	z-index:50;
+}
+
+.main-channel-45987{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: none;
+	z-index:50;
+}
+
+.admin-channel-45987{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: none;
+	z-index:50;
+	display:none;
+}
+
+.header-message-45987{
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background: #d4d4d4;
+    overflow: hidden;
+}
+
+.header-message-input-45987{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    padding: 10px 0px 0px 10px;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #929292;
+}
+
+.header-message-button-45987{
+    position: absolute;
+    width: 100px;
+    background: #6973ff;
+    height: 35px;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    -webkit-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+}
+
+.header-message-button-45987:hover{
+	background: #676cb9;
+}
+
+.header-message-button-t-45987{
+	font-size: 14px;
+    line-height: 35px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.header-join-button-345345{
+
+    top: 0px;
+    background: #6973ff;
+    right: 0px;
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    -webkit-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+}
+
+.header-join-button-345345:hover{
+	background: #676cb9;
+}
+
+
+.header-join-button-t-345345{
+
+	font-size: 14px;
+    line-height: 35px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;	
+}
+
+
+.header-list-channel-45987{
+	position: relative;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 200px;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+    z-index: 100;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.header-list-channel-45987::-webkit-scrollbar {
+	width: 10px;
+    background: none;
+}
+
+
+.header-list-channel-45987::-webkit-scrollbar-track {
+	background: none;
+    border-radius: 5px;
+}
+ 
+
+.header-list-channel-45987::-webkit-scrollbar-thumb {
+	background: gray; 
+	border-radius: 10px;
+}
+
+
+.header-list-channel-45987::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+}
+
+
+
+.channel-name-45877{
+
+	line-height: 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #3e3e3e;
+    font-weight: 400;
+    cursor: pointer;
+    background: white;
+    padding-left: 10px;
+    border-bottom: 1px solid #f9f9f9;
+    -webkit-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+}
+
+
+.channel-name-45877:hover{
+    background: whitesmoke;
+}
+
+
+.connected-channel-45987{
+	position: absolute;
+    left: 0px;
+    bottom: 100px;
+    height: 30px;
+    width: 100%;
+    background: #d8d8d8;
+    z-index: 100;
+}
+
+
+.connected-channel-text-45987{
+	position:relative;
+}
+
+.connected-channel-text-g-45987{
+    line-height: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #929292;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.header-all-messages-45987{
+	position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    height: 400px;
+    background: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.user-message-item-45987{
+	position: relative;
+    width: 100%;
+    height: 60px;
+    background: none;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.user-message-item-t-45987{
+	position:relative;
+    line-height: 20px;
+	height: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #b9b9b9;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-message-item-m-45987{
+	line-height: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #3a3a3a;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-settings-45987{
+	position: relative;
+    left: 10px;
+    width: 40px;
+    height: 15px;
+    background: none;
+    cursor: pointer;
+}
+
+.header-settings-bt-45987{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 15px;
+    background: #f1f1f1;
+	border-radius: 40px;
+}
+
+.header-settings-bt-r-45987{
+	width: 22px;
+    height: 22px;
+    position: absolute;
+    background: #6973ff;
+    top: 0px;
+    right: -5px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.header-settings-text-45987{
+    line-height: 30px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #3e3e3e;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+.header-dev-all-messages-45987{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    height: 400px;
+    background: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+<div class="header-g-45987" >
+
+	<div class="header-g-next-45987" >
+		<div class="header-img-45987" >
+			<img class="header-img-next-45987" src="icon/main.png" />
+		</div>
+		<div class="header-text-45987-t" >OSChat</div>
+		<div id="main-channel" class="header-button-45987-t" >Channels</div>
+		<div id="dev-channel" class="header-button-45987-t" >Dev Tools</div>
+	</div>
+	
+	<div id="join-channel" class="header-join-button-345345" >
+		<div class="header-join-button-t-345345" >Join</div>
+	</div>	
+</div>
+
+
+<div id="channel-list" class="header-list-channel-45987" >
+</div>
+
+
+
+
+
+<div class="header-channel-45987" >
+
+	<div class="main-channel-45987" >
+	
+		<div class="header-all-messages-45987" >
+		</div>
+	
+		<div class="header-message-45987" >
+			<textarea id="message-data" class="header-message-input-45987" type="text" class="" placeholder="send message" ></textarea>
+			<div id="message-send" class="header-message-button-45987" >
+				<div class="header-message-button-t-45987" >Send</div>
+			</div>
+		</div>
+		
+		<div class="connected-channel-45987" >
+
+			<div class="connected-channel-text-45987" >
+				<div class="connected-channel-text-g-45987" ></div>
+			</div>
+		</div>
+	</div>
+	<div class="admin-channel-45987" >
+		
+		<div class="connected-channel-45987" >
+
+			<div class="connected-channel-text-45987" >
+				<div class="connected-channel-text-g-45987" ></div>
+			</div>
+		</div>
+		
+		<div class="header-dev-all-messages-45987" >
+		</div>
+		
+		<div class="header-message-45987" >
+
+			<div class="header-settings-text-45987" >Symbl AI Sentiment</div>
+
+			<div class="header-settings-45987" >
+				<div class="header-settings-bt-45987" ></div>
+				<div class="header-settings-bt-r-45987" ></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+	$("#main-channel").click(function() {
+	
+		$(".main-channel-45987").show();
+		$(".admin-channel-45987").hide();
+	});
+	
+	$("#dev-channel").click(function() {
+		
+		$(".main-channel-45987").hide();
+		$(".admin-channel-45987").show();
+	});
+
+
+	// read channel messages
+	setInterval(function(){ 
+		
+		$(".header-all-messages-45987").empty();
+		$(".header-dev-all-messages-45987").empty();
+		var g_text_array = $(".connected-channel-text-g-45987").text().split(" ");
+		var g_user = g_text_array.slice(-1)[0];	
+		console.log(g_user);
+	
+		$.post("/message", {"g_type": "get_channel_messages", "channel_name":g_user}, function(data, status) {
+		
+			var array = data['channel_messages'];
+			for (const item of array) {
+			
+				if(item['g_message'] == 'type_sentiment') {
+					$(".header-dev-all-messages-45987").append('<div class="user-message-item-45987" ><div class="user-message-item-t-45987" >'+item['g_user_id']+'</div><div class="user-message-item-m-45987" >'+item['g_sentiment_value']+'</div><div class="user-message-item-m-45987" >'+item['g_sentiment_message']+'</div></div>');
+				}				
+				else {
+					$(".header-all-messages-45987").append('<div class="user-message-item-45987" ><div class="user-message-item-t-45987" >'+item['g_user_id']+'</div><div class="user-message-item-m-45987" >'+item['g_message']+'</div></div>');
+				}
+			}
+			
+			console.log(JSON.stringify(data));	
+		});	
+		
+	}, 5000);
+
+
+	// onload 
+	$.post("/message", {"g_type": "get_user_data"}, function(data, status) {
+		
+		$(".connected-channel-text-g-45987").text("Connected to channel @" + data.username);
+		
+		console.log(JSON.stringify(data));	
+	});
+
+
+	$("#join-channel").click(function() {
+	
+		$('#channel-list').empty();
+		$('#channel-list').toggle('slow');
+	
+		$.post("/message", {"g_type": "get_channel_list"}, function(data, status) {
+		
+			var array = data['user_list'];
+			for (const item of array) {
+			
+				console.log(item);
+				$("#channel-list").append('<div class="channel-name-45877" >'+item+'</div>');
+			}
+		
+			console.log(JSON.stringify(data));	
+		});
+	});
+	
+	
+	$(document).on('click', '#message-send', function() { 
+	
+		var g_text_array = $(".connected-channel-text-g-45987").text().split(" ");
+		var g_user = g_text_array.slice(-1)[0];
+		
+		$.post("/message", {"g_type": "send_channel_message", "g_username":g_user, "g_message":btoa($("#message-data").val())}, function(data, status) {
+			
+		});	
+		
+		$(".header-message-input-45987").val("");
+	});
+	
+	
+	$(document).on('click', '.channel-name-45877', function() { 
+	 
+		var label = $(this).text();
+		
+		//set
+		$(".connected-channel-text-g-45987").text("Connected to channel @" + label);
+	});
+});
+</script>
+</body>
+</html>

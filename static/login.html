@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+body{
+	background: #fbfbfb;
+}
+
+
+.menu-g-458764{
+    position: relative;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    height: 500px;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+	z-index:100;
+}
+
+
+.menu-g-next-458764{
+
+    position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    height: 450px;
+    top: 0px;
+}
+
+.menu-g-w-458764{
+	position: relative;
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: -webkit-box;
+}
+
+.menu-img-458764{
+	position: relative;
+    top: 0px;
+    width: 70px;
+    height: 100px;
+    left: 0px;
+    cursor: pointer;
+    background: none;
+}
+
+.menu-img-next-458764{
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.menu-text-t-458764{
+	line-height: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #585858;
+    font-weight: 600;
+}
+
+.menu-text-label-458764{
+	font-size: 20px;
+    font-family: sans-serif;
+    color: #7881ff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-input-459875{
+	position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    padding: 0px 0px 0px 10px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(156 156 156 / 25%);
+    -webkit-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+}
+
+.menu-input-459875:hover{
+	background: whitesmoke;
+}
+
+.menu-button-458764{
+    position: relative;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #6973ff;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 25%);
+	cursor:pointer;
+    -webkit-transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -o-transition: background 0.5s ease-in;
+}
+
+.menu-button-458764:hover{
+	background: #a5abff;
+}
+
+.menu-button-t-458764{
+	font-size: 14px;
+    line-height: 40px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-text-t-b-458764{
+	font-size: 15px;
+    font-family: sans-serif;
+    color: #717171;
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-in;
+    -moz-transition: color 0.5s ease-in;
+    -o-transition: color 0.5s ease-in;
+}
+
+.menu-text-t-b-458764:hover{
+	color: #909090	
+}
+
+.menu-paper-458764{
+	background-image: url(icon/paper.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+
+.menu-g-w-3495874{
+    position: absolute;
+	bottom: 0px;
+	left:0px;
+    width: 100%;
+    height: 50px;
+    background: none;
+    display: -webkit-box;
+}
+
+
+.menu-text-t-3495874{
+    line-height: 50px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #151515;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+
+.menu-img-3495874{
+	position: relative;
+    top: 0px;
+    width: 70px;
+    height: 50px;
+    left: 0px;
+    cursor: pointer;
+    background: none;
+}
+
+
+.menu-img-next-3495874{
+	width: 90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<div class="menu-paper-458764" ></div>
+<div class="menu-g-458764" >
+	<div class="menu-g-next-458764" >
+	
+		<div class="menu-g-w-458764" >
+			<div class="menu-img-458764" >
+				<img class="menu-img-next-458764" src="icon/main.png" />
+			</div>
+			<div class="menu-text-t-458764" >OSChat</div>
+		</div>
+		<div class="menu-text-label-458764" >Sign In</div>
+		<input type="text" id="user-val" class="menu-input-459875" placeholder="username or email" />
+		<input type="password" id="password-val" class="menu-input-459875" placeholder="password" />
+		<div id="login-button" class="menu-button-458764" >
+			<div class="menu-button-t-458764" >SIGN IN</div>
+		</div>
+		<div id="redirect-1" class="menu-text-t-b-458764" >Sign Up</div>
+	</div>
+	<div class="menu-g-w-3495874" >
+		<div class="menu-text-t-3495874" >Powered By</div>
+		<div class="menu-img-3495874" >
+			<img class="menu-img-next-3495874" src="icon/Symbl-AI.png" />
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#login-button").click(function() {
+	
+		$.post("/login", {"user": $("#user-val").val(), "password":$("#password-val").val()}, function(data, status) {
+		
+			console.log(JSON.stringify(data));
+			
+			if(data.status == 200) {
+				window.location.replace("/dashboard");
+			}
+		});
+	});
+	
+	$("#redirect-1").click(function() {
+	
+		window.location.replace("/signup");
+	});	
+});
+</script>
+</body>
+</html>
